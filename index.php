@@ -5,6 +5,6 @@
     <title></title>
   </head>
   <body>
-GIT CONFIG POWERSHELL
+GIT CONFIG POWERSHELLs
   </body>
 </html>
