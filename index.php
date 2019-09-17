@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="iso-8859-1">
     <title>
     </title>
   </head>
   <body>
-    GIT CONFIG POWERSHELLs
+
   </body>
 </html>
