@@ -41,7 +41,22 @@ echo '<hr>',$bin,'<hr>';
       Twoje imię: $imie
       TEKST;
 
+      $miasto = 'Poznań';
       echo $text;
+      echo <<< E
+      Miasto: $miasto<hr>
+      E;
+
+      //składnia nowdoc
+
+      echo <<< 'E'
+      Miasto: $miasto<hr>
+      E;
+
+      //####
+
+      echo "Nazwa zmiennej: \$miasto, wartość: $miasto";
+
      ?>
   </body>
 </html>
