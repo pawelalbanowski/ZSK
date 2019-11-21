@@ -1,0 +1,98 @@
+html,body
+/*some default dumb HTML values' resets*/
+{
+
+    padding:0;
+    background-color: #393e46;
+    margin:0;
+
+}
+
+.navbar-dark .navbar-nav .nav-link
+/*navbar buttons*/
+{
+  color: #eeeeee;
+}
+
+
+.navbar {
+
+    padding: 0 10%;
+
+    background-color: #222831;
+
+}
+#container
+{
+  height: 100%;
+}
+
+
+.navbar button
+/*menu button on smaller screens - more navbar options possibly to be added or already in and i forgot to remove this comment*/
+{
+
+    outline: none;
+
+    border: none;
+
+}
+
+.logo__ /*logo, maybe text cos i suck at graphic stuff? if so, this is not used*/
+{
+  color: #eeeeee;
+  font-weight: bold;
+}
+
+#col1, #col2, #col3 /*the three huge divs on the login screen*/
+{
+  margin-top: 100px;
+  margin-right: 50px;
+  margin-left: 50px;
+  text-align: center;
+  border: 1px solid #393e46;
+  background-color: #00adb5;
+  height: 300px;
+  border-radius: 30px;
+  padding: 50px;
+  line-height: 2;
+  color: #eeeeee;
+}
+.text /*actually only login and register forms i think, dont be fooled by the name*/
+{
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-size: 15px;
+  padding: 2px;
+  color: #eeeeee;
+}
+footer /*a lot to be added, dont forget*/
+{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  background-color: #222831;
+  width: 100%;
+  height: 50px;
+  left: 0;
+  color: #eeeeee;
+  line-height: 50px;
+  text-align: center;
+  font-size: 11px;;
+}
+.h11 /*headers of the login and register sections*/
+{
+  font-size: 25px;
+}
+.zaloguj
+{
+  font-size: 25px;
+}
+.zarejestruj
+{
+  font-size: 20px;
+}
+#col3 /*the third div on the login screen*/
+{
+  line-height: 3;
+}
