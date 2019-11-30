@@ -1,5 +1,5 @@
 html,body
-/*some default dumb HTML values' resets*/
+/*resetting some dumb default html values*/
 {
 
     padding:0;
@@ -11,7 +11,7 @@ html,body
 .navbar-dark .navbar-nav .nav-link
 /*navbar buttons*/
 {
-  color: #eeeeee;
+    color: #eeeeee;
 }
 
 
@@ -43,6 +43,11 @@ html,body
   color: #eeeeee;
   font-weight: bold;
 }
+.logo__:hover
+{
+  color: #eeeeee;
+  text-decoration: none;
+}
 
 #col1, #col2, #col3 /*the three huge divs on the login screen*/
 {
@@ -57,14 +62,41 @@ html,body
   padding: 50px;
   line-height: 2;
   color: #eeeeee;
+  box-shadow: 1px 1px 50px 5px #222831;
 }
 .text /*actually only login and register forms i think, dont be fooled by the name*/
 {
-  border-radius: 5px;
+  border-radius: 20px;
   margin-bottom: 5px;
   font-size: 15px;
-  padding: 2px;
-  color: #eeeeee;
+  padding: 4px;
+  color: #black;
+  border: none;
+  text-indent: 15px;
+  width: 250px;
+}
+.text:focus
+{
+  outline-style: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+::placeholder
+{
+  text-align: left;
+  text-indent: 15px;
+}
+.button1
+{
+  margin-top: 10px;
+  border-radius: 15px;
+  border: none;
+  width: 150px;
+  height: 40px;
+}
+.button1:hover
+{
+  background-color: #eeeeee;
 }
 footer /*a lot to be added, dont forget*/
 {

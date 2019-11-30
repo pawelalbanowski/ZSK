@@ -2,12 +2,11 @@
 <html lang="pl" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Home - Techlish</title>
+    <title>Profil - Techlish</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="javascript/register.js"></script>
   </head>
   <body>
     <header><!--navbar-->
@@ -24,8 +23,8 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Niezalogowany</a>
-                    <!--clicking this moves to the profile or cockpit or sth-->
+                    <a class="nav-link" href="index.html">*USER*</a>
+                    <!--clicking this moves back to the profile or cockpit or sth-->
                 </li>
             </ul>
         </div>
@@ -33,37 +32,11 @@
 </header>
 <div class="container-fluid" id="container">
   <div class="row">
-    <div class="col-sm" id="col1">
-      <h1 class="h11">Rejestracja</h1>
-      <form class="register" name="register" onsubmit="register()"><!--register-->
-        <input type="text" name="login_r" placeholder="Nazwa użytkownika..." class="text" required>
-        <br>
-        <input type="text" name="email_r" placeholder="e-mail..." class="text" required>
-        <br>
-        <input type="password" name="password_r" placeholder="hasło..." class="text" required>
-        <br>
-        <input type="submit" name="submit1" value="Zarejestruj" class="button1">
-      </form>
+    <div class="col-md-4" id="col1">
+      <h1 class="h11">Tu pewnie będzie nawigacja</h1>
     </div>
-    <div class="col-sm" id="col2"><!--login-->
-      <h1 class="h11">Login</h1>
-      <form class="login" name="login" method="post">
-        <input type="text" name="login" placeholder="Nazwa lub email..." class="text"
-        autofocus required>
-        <br>
-        <input type="password" name="password" placeholder="hasło..." class="text" required>
-        <br>
-        <input type="submit" name="submit2" value="Zaloguj" class="button1">
-      </form>
-    </div>
-    <div class="col-sm" id="col3"> <!--"login" and "register" prompt or whatever-->
-      <div class="zaloguj">
-        Zaloguj się
-      </div>
-      <div class="zarejestruj">
-        Nie masz konta?
-        Zarejestruj się
-      </div>
+    <div class="col-md-6" id="col2">
+      *Tu będzie kurs (pewnie w formie fiszek ale nie myślałem jeszcze nad tym )*
     </div>
     <footer class="page-footer">&copy; Paweł Albanowski 2019</footer>
 </div>
