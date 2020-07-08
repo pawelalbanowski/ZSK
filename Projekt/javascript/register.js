@@ -1,10 +1,23 @@
-function register()
+function register(x)
 {
 var login_r = document.forms['register']['login_r'].value;
 var email_r = document.forms['register']['email_r'].value;
 var password_r = document.forms['register']['password_r'].value;
-validateMail(email_r);
-validatePassw(password_r);
+if (validateMail(email_r))
+{
+  //if its fine
+}
+else {
+  //its gonna look for mistakes and tell the user what they are
+}
+if (validatePassw(password_r);)
+{
+  //if its fine
+}
+else {
+  //its gonna look for mistakes and tell the user what they are
+}
+
 };
 function validateMail(email_r)
 {
@@ -29,3 +42,10 @@ function validatePassw(password_r)
     return false;
   }
 };
+
+function login(x)
+{
+  var login = document.forms['login']['login'];
+  var password = document.forms['login']['password'];
+  validatePassw(password_r);
+}

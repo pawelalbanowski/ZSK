@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="pl" dir="ltr">
   <head>
+    <?php
+    session_start();
+    if(!isset($_SESSION['UserID']))
+    {
+
+     ?>
     <meta charset="utf-8">
     <title>Home - Techlish</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="javascript/register.js"></script>
+    <script src="./javascript/register.js"></script>
   </head>
   <body>
     <header><!--navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
         <div class="navbar-brand col-9 col-sm-6 col-md-5 col-lg-4 col-xl-3" id="logobg">
-            <a href="index.html" class="logo__">
+            <a href="#" class="logo__">
                 Techlish
             </a>
         </div>
@@ -23,9 +29,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Niezalogowany</a>
-                    <!--clicking this moves to the profile or cockpit or sth-->
+                <li class="logo__" class="nav-item">
+                    Niezalogowany
                 </li>
             </ul>
         </div>
@@ -35,7 +40,7 @@
   <div class="row">
     <div class="col-sm" id="col1">
       <h1 class="h11">Rejestracja</h1>
-      <form class="register" name="register" onsubmit="register()"><!--register-->
+      <form class="register" name="register" method="post" action="./scripts/register.php"><!--register-->
         <input type="text" name="login_r" placeholder="Nazwa użytkownika..." class="text" required>
         <br>
         <input type="text" name="email_r" placeholder="e-mail..." class="text" required>
@@ -47,7 +52,7 @@
     </div>
     <div class="col-sm" id="col2"><!--login-->
       <h1 class="h11">Login</h1>
-      <form class="login" name="login" method="post">
+      <form class="login" name="login" method="post" action="./scripts/login.php">
         <input type="text" name="login" placeholder="Nazwa lub email..." class="text"
         autofocus required>
         <br>
@@ -65,7 +70,7 @@
         Zarejestruj się
       </div>
     </div>
-    <footer class="page-footer">&copy; Paweł Albanowski 2019</footer>
+    <footer class="page-footer">&copy; Paweł Albanowski 2020</footer>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -73,3 +78,18 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
+<?php
+}
+else {
+  if(isset($_SESSION['Admin']))
+  {
+    if($_SESSION['Admin']==0)
+    header("Location: ./user.php");
+    else
+    header("Location: ./admin.php");
+  }
+}
+
+
+
+ ?>
